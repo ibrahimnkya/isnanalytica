@@ -1,25 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
-
-@theme {
-  /* Electric Green Brand Color */
-  --color-electric-green: #00FF41;
-  --color-electric-green-dim: #00CC33;
-  --color-electric-green-glow: rgba(0, 255, 65, 0.3);
-  
-  --color-primary: #00FF41;
-  --color-primary-hover: #00CC33;
-  --color-primary-soft: rgba(0, 255, 65, 0.1);
-  --color-primary-dark: #00AA2A;
-
-  --color-surface-light: #FFFFFF;
-  --color-surface-dark: #0A0A0A;
-
-  --color-bg-light: #FAFAFA;
-  --color-bg-dark: #000000;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* Core Brand - Black, White & Electric Green */
