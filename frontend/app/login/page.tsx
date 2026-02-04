@@ -57,25 +57,25 @@ export default function LoginPage() {
     return (
         <div className="flex min-h-screen bg-background font-sans text-foreground">
             {/* ── LEFT COLUMN: Interaction Zone ── */}
-            <div className="w-full lg:w-1/2 flex flex-col p-8 md:p-12 lg:p-20 justify-between bg-background">
+            <div className="w-full lg:w-1/2 flex flex-col p-4 sm:p-8 md:p-12 lg:p-20 justify-between bg-background min-h-screen">
                 {/* Logo */}
-                <div className="flex justify-center lg:justify-start">
+                <div className="flex justify-center lg:justify-start pt-2 sm:pt-0">
                     <Link href="/" className="flex items-center gap-2 group">
                         <div className="h-8 w-8 bg-[#00FF41] rounded-lg flex items-center justify-center shadow-lg shadow-[#00FF41]/20">
                             <BarChart3 className="h-5 w-5 text-black" strokeWidth={2.5} />
                         </div>
-                        <span className="text-xl font-black tracking-tighter uppercase text-foreground">
+                        <span className="text-lg sm:text-xl font-black tracking-tighter uppercase text-foreground">
                             ISN <span className="text-[#00FF41]">Analytica</span>
                         </span>
                     </Link>
                 </div>
 
                 {/* Center: Form */}
-                <div className="flex flex-col items-center justify-center py-12">
-                    <div className="w-full max-w-[380px] space-y-8">
+                <div className="flex flex-col items-center justify-center py-8 sm:py-12 flex-1">
+                    <div className="w-full max-w-[380px] space-y-6 sm:space-y-8 px-2 sm:px-0">
                         <div className="text-center lg:text-left space-y-2">
-                            <h1 className="text-3xl font-black tracking-tight text-foreground">Welcome Back</h1>
-                            <p className="text-foreground-secondary font-medium">Please enter your enterprise credentials to sign in.</p>
+                            <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-foreground">Welcome Back</h1>
+                            <p className="text-sm sm:text-base text-foreground-secondary font-medium">Please enter your enterprise credentials to sign in.</p>
                         </div>
 
                         <form onSubmit={handleLogin} className="space-y-6">

@@ -99,24 +99,24 @@ export default function RegisterPage() {
     return (
         <div className="flex min-h-screen bg-background font-sans text-foreground">
             {/* ── LEFT COLUMN: Stepper Interaction ── */}
-            <div className="w-full lg:w-1/2 flex flex-col p-8 md:p-12 lg:p-20 justify-between bg-background relative overflow-hidden">
+            <div className="w-full lg:w-1/2 flex flex-col p-4 sm:p-8 md:p-12 lg:p-20 justify-between bg-background relative overflow-hidden min-h-screen">
                 {/* Logo */}
-                <div className="flex justify-center lg:justify-start relative z-10">
+                <div className="flex justify-center lg:justify-start relative z-10 pt-2 sm:pt-0">
                     <Link href="/" className="flex items-center gap-2 group">
                         <div className="h-8 w-8 bg-[#00FF41] rounded-lg flex items-center justify-center shadow-lg shadow-[#00FF41]/20">
                             <BarChart3 className="h-5 w-5 text-black" strokeWidth={2.5} />
                         </div>
-                        <span className="text-xl font-black tracking-tighter uppercase text-foreground">
+                        <span className="text-lg sm:text-xl font-black tracking-tighter uppercase text-foreground">
                             ISN <span className="text-[#00FF41]">Analytica</span>
                         </span>
                     </Link>
                 </div>
 
                 {/* Center: Stepper Form */}
-                <div className="flex flex-col items-center justify-center py-12 relative z-10">
-                    <div className="w-full max-w-[420px] space-y-8">
+                <div className="flex flex-col items-center justify-center py-8 sm:py-12 relative z-10 flex-1">
+                    <div className="w-full max-w-[420px] space-y-6 sm:space-y-8 px-2 sm:px-0">
                         {/* Step Progress Indicators */}
-                        <div className="flex items-center justify-between px-2 mb-12">
+                        <div className="flex items-center justify-between px-0 sm:px-2 mb-8 sm:mb-12">
                             {steps.map((s, i) => (
                                 <div key={s.id} className="flex items-center group">
                                     <div className={`

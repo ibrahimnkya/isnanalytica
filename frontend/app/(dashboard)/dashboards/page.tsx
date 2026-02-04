@@ -89,15 +89,15 @@ export default function DashboardsPage() {
     };
 
     return (
-        <div className="space-y-8 animate-in pb-20">
+        <div className="space-y-6 sm:space-y-8 animate-in pb-20">
             {/* Enhanced Header */}
-            <div className="flex flex-col gap-6">
-                <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
-                    <div className="space-y-3">
-                        <div className="flex items-center gap-3">
+            <div className="flex flex-col gap-4 sm:gap-6">
+                <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 sm:gap-6">
+                    <div className="space-y-2 sm:space-y-3">
+                        <div className="flex items-center gap-2 sm:gap-3">
                             <div className="relative">
-                                <div className="absolute inset-0 bg-[#00FF41]/20 rounded-xl blur-lg" />
-                                <div className="relative h-12 w-12 bg-[#00FF41] rounded-xl flex items-center justify-center shadow-lg shadow-[#00FF41]/30">
+                                <div className="absolute inset-0 bg-[#00FF41]/20 rounded-lg sm:rounded-xl blur-lg" />
+                                <div className="relative h-10 w-10 sm:h-12 sm:w-12 bg-[#00FF41] rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg shadow-[#00FF41]/30">
                                     <LayoutDashboard className="h-6 w-6 text-black" strokeWidth={2.5} />
                                 </div>
                             </div>

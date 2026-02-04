@@ -8,10 +8,10 @@ export function Navbar() {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <header className="flex h-16 items-center justify-between border-b border-border bg-background/50 backdrop-blur-md px-4 md:px-8 sticky top-0 z-50 transition-colors shrink-0">
-            <div className="flex items-center gap-4">
+        <header className="flex h-14 sm:h-16 items-center justify-between border-b border-border bg-background/50 backdrop-blur-md px-3 sm:px-4 md:px-8 sticky top-0 z-50 transition-colors shrink-0">
+            <div className="flex items-center gap-2 sm:gap-4">
                 <SidebarTrigger className="-ml-1" />
-                <div className="relative hidden md:block w-72 lg:w-96">
+                <div className="relative hidden sm:block w-48 md:w-72 lg:w-96">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                         <Search className="h-4 w-4 text-zinc-500" />
                     </div>
@@ -21,21 +21,26 @@ export function Navbar() {
                         placeholder="Search..."
                     />
                 </div>
+                {/* Mobile search button */}
+                <button className="sm:hidden rounded-lg p-2 text-zinc-400 hover:bg-surface-hover hover:text-foreground transition-all">
+                    <Search className="h-5 w-5" />
+                </button>
             </div>
 
-            <div className="flex items-center space-x-5">
+            <div className="flex items-center gap-2 sm:gap-3 md:space-x-5">
                 <button
                     onClick={toggleTheme}
-                    className="rounded-full p-2 text-zinc-400 hover:bg-surface-hover hover:text-foreground transition-all flex items-center justify-center border border-transparent hover:border-border"
+                    className="rounded-full p-1.5 sm:p-2 text-zinc-400 hover:bg-surface-hover hover:text-foreground transition-all flex items-center justify-center border border-transparent hover:border-border"
                     title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
                 >
-                    {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+                    {theme === 'light' ? <Moon className="h-4 w-4 sm:h-5 sm:w-5" /> : <Sun className="h-4 w-4 sm:h-5 sm:w-5" />}
                 </button>
-                <button className="rounded-full p-2 text-zinc-400 hover:bg-surface-hover hover:text-foreground transition-all">
-                    <Bell className="h-5 w-5" />
+                <button className="rounded-full p-1.5 sm:p-2 text-zinc-400 hover:bg-surface-hover hover:text-foreground transition-all relative">
+                    <Bell className="h-4 w-4 sm:h-5 sm:w-5" />
+                    <span className="absolute top-0.5 right-0.5 h-2 w-2 bg-[#00FF41] rounded-full" />
                 </button>
-                <div className="h-9 w-9 rounded-full bg-surface border border-border flex items-center justify-center text-foreground cursor-pointer hover:border-primary/50 hover:shadow-lg transition-all shadow-sm overflow-hidden">
-                    <User className="h-5 w-5 text-zinc-400" />
+                <div className="h-8 w-8 sm:h-9 sm:w-9 rounded-full bg-surface border border-border flex items-center justify-center text-foreground cursor-pointer hover:border-primary/50 hover:shadow-lg transition-all shadow-sm overflow-hidden">
+                    <User className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
                 </div>
             </div>
         </header>
