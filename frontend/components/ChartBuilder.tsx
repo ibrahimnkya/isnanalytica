@@ -147,7 +147,7 @@ export function ChartBuilder() {
             },
             series: series,
             grid: { top: 40, bottom: 60, left: 60, right: 40 },
-            color: ['#FFFFFF', '#E5E5E5', '#A3A3A3', '#737373', '#404040', '#262626']
+            color: ['#00FF41', '#00CC33', '#00AA2A', '#008822', '#FFFFFF', '#B3B3B3']
         };
     };
 
@@ -342,7 +342,7 @@ export function ChartBuilder() {
                     <button
                         onClick={handleSave}
                         disabled={isSaving || !chartData}
-                        className="w-full flex items-center justify-center rounded-xl bg-primary px-4 py-3 text-sm font-black text-primary-foreground hover:bg-primary-hover disabled:opacity-50 transition-all shadow-lg shadow-primary/10 active:scale-[0.98]"
+                        className="w-full flex items-center justify-center rounded-xl bg-[#00FF41] px-4 py-3 text-sm font-black text-black hover:bg-[#00CC33] disabled:opacity-50 transition-all shadow-lg shadow-[#00FF41]/20 active:scale-[0.98]"
                     >
                         {isSaving ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Save className="mr-2 h-4 w-4" />}
                         Persist Visualization

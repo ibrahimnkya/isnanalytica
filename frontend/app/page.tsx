@@ -91,8 +91,8 @@ export default function LandingPage() {
                 <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
                     <div className="flex items-center gap-3 group cursor-pointer">
                         <div className="relative">
-                            <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                            <div className="relative h-11 w-11 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-primary/50 transition-all duration-300 group-hover:scale-105">
+                            <div className="absolute inset-0 bg-[#00FF41]/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
+                            <div className="relative h-11 w-11 bg-[#00FF41] rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-[#00FF41]/50 transition-all duration-300 group-hover:scale-105">
                                 <BarChart3 className="h-6 w-6 text-black" strokeWidth={2.5} />
                             </div>
                         </div>
@@ -128,8 +128,8 @@ export default function LandingPage() {
                             href="/register"
                             className="relative group"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark rounded-full blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
-                            <div className="relative bg-gradient-to-r from-primary to-primary-dark text-black text-sm font-semibold px-6 py-2.5 rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 group-hover:scale-105">
+                            <div className="absolute inset-0 bg-[#00FF41] rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300" />
+                            <div className="relative bg-[#00FF41] text-black text-sm font-semibold px-6 py-2.5 rounded-full hover:shadow-lg hover:shadow-[#00FF41]/30 transition-all duration-300 group-hover:scale-105">
                                 Get Started
                             </div>
                         </Link>
@@ -154,7 +154,7 @@ export default function LandingPage() {
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9] text-foreground">
                                 Data-driven
                                 <br />
-                                <span className="bg-gradient-to-r from-primary via-primary to-gray-400 bg-clip-text text-transparent">
+                                <span className="bg-gradient-to-r from-[#00FF41] via-[#00CC33] to-[#00AA2A] bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(0,255,65,0.3)]">
                                     decisions.
                                 </span>
                             </h1>
@@ -168,8 +168,8 @@ export default function LandingPage() {
                                     href="/register"
                                     className="group relative w-full sm:w-auto"
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-all duration-300" />
-                                    <div className="relative px-8 py-4 bg-gradient-to-r from-primary to-primary-dark text-black font-bold rounded-2xl flex items-center justify-center gap-3 group-hover:shadow-2xl group-hover:shadow-primary/40 transition-all duration-300 group-hover:scale-[1.02]">
+                                    <div className="absolute inset-0 bg-[#00FF41] rounded-2xl blur-xl opacity-40 group-hover:opacity-60 transition-all duration-300" />
+                                    <div className="relative px-8 py-4 bg-[#00FF41] text-black font-bold rounded-2xl flex items-center justify-center gap-3 group-hover:shadow-2xl group-hover:shadow-[#00FF41]/40 transition-all duration-300 group-hover:scale-[1.02]">
                                         Start Your Journey
                                         <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" strokeWidth={2.5} />
                                     </div>
@@ -210,9 +210,9 @@ export default function LandingPage() {
                                         {/* Terminal Header */}
                                         <div className="px-5 py-4 bg-gradient-to-b from-surface-alt/50 to-transparent border-b border-border/30 flex items-center justify-between">
                                             <div className="flex gap-2">
-                                                <div className="h-3 w-3 rounded-full bg-red-500/60 hover:bg-red-500 transition-colors cursor-pointer shadow-lg shadow-red-500/20" />
-                                                <div className="h-3 w-3 rounded-full bg-amber-500/60 hover:bg-amber-500 transition-colors cursor-pointer shadow-lg shadow-amber-500/20" />
-                                                <div className="h-3 w-3 rounded-full bg-primary/60 hover:bg-primary transition-colors cursor-pointer shadow-lg shadow-primary/20" />
+                                                <div className="h-3 w-3 rounded-full bg-[#FF5F56]/60 hover:bg-[#FF5F56] transition-colors cursor-pointer shadow-lg shadow-[#FF5F56]/20" />
+                                                <div className="h-3 w-3 rounded-full bg-[#FFBD2E]/60 hover:bg-[#FFBD2E] transition-colors cursor-pointer shadow-lg shadow-[#FFBD2E]/20" />
+                                                <div className="h-3 w-3 rounded-full bg-[#00FF41]/60 hover:bg-[#00FF41] transition-colors cursor-pointer shadow-lg shadow-[#00FF41]/20" />
                                             </div>
                                             <div className="flex items-center gap-2.5 text-xs font-semibold text-foreground-muted">
                                                 <Terminal className="h-4 w-4" strokeWidth={2} />

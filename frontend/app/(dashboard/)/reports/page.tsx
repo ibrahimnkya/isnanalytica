@@ -78,7 +78,7 @@ export default function ReportsPage() {
                     <h1 className="text-3xl font-bold tracking-tight">Scheduled Reports</h1>
                     <p className="text-muted-foreground mt-1 text-lg">Automate your reporting with scheduled dashboard exports.</p>
                 </div>
-                <button className="flex items-center gap-2 bg-primary text-black px-6 py-3 rounded-2xl font-bold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 transform hover:scale-105">
+                <button className="flex items-center gap-2 bg-[#00FF41] text-black px-6 py-3 rounded-2xl font-bold hover:shadow-lg hover:shadow-[#00FF41]/30 transition-all duration-300 transform hover:scale-105">
                     <Plus className="h-5 w-5" />
                     Create New Report
                 </button>

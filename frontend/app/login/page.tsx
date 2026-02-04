@@ -61,11 +61,11 @@ export default function LoginPage() {
                 {/* Logo */}
                 <div className="flex justify-center lg:justify-start">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center shadow-lg shadow-black/20">
-                            <BarChart3 className="h-5 w-5 text-primary-foreground" strokeWidth={2.5} />
+                        <div className="h-8 w-8 bg-[#00FF41] rounded-lg flex items-center justify-center shadow-lg shadow-[#00FF41]/20">
+                            <BarChart3 className="h-5 w-5 text-black" strokeWidth={2.5} />
                         </div>
                         <span className="text-xl font-black tracking-tighter uppercase text-foreground">
-                            ISN <span className="text-foreground">Analytica</span>
+                            ISN <span className="text-[#00FF41]">Analytica</span>
                         </span>
                     </Link>
                 </div>
@@ -131,8 +131,8 @@ export default function LoginPage() {
                                 disabled={isLoading}
                                 className="group/btn relative w-full pt-2"
                             >
-                                <div className="absolute inset-0 bg-black/20 rounded-xl blur-lg opacity-0 group-hover/btn:opacity-100 transition-opacity" />
-                                <div className="relative w-full py-3.5 bg-primary text-primary-foreground font-black rounded-xl hover:bg-primary-hover transition-all flex items-center justify-center gap-2 active:scale-[0.98] disabled:opacity-50 shadow-lg shadow-black/20 uppercase tracking-widest text-sm">
+                                <div className="absolute inset-0 bg-[#00FF41]/30 rounded-xl blur-lg opacity-0 group-hover/btn:opacity-100 transition-opacity" />
+                                <div className="relative w-full py-3.5 bg-[#00FF41] text-black font-black rounded-xl hover:bg-[#00CC33] transition-all flex items-center justify-center gap-2 active:scale-[0.98] disabled:opacity-50 shadow-lg shadow-[#00FF41]/20 uppercase tracking-widest text-sm">
                                     {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : (
                                         <>
                                             Sign In
@@ -144,7 +144,7 @@ export default function LoginPage() {
                         </form>
 
                         <p className="text-center text-sm font-medium text-foreground-secondary">
-                            New to ISN? <Link href="/register" className="text-primary font-black hover:underline">Create an account</Link>
+                            New to ISN? <Link href="/register" className="text-[#00FF41] font-black hover:underline">Create an account</Link>
                         </p>
                     </div>
                 </div>
@@ -158,18 +158,18 @@ export default function LoginPage() {
             </div>
 
             {/* ── RIGHT COLUMN: Visual Showcase ── */}
-            <div className="hidden lg:flex w-1/2 bg-bg-dark relative flex-col items-center justify-center p-20 overflow-hidden">
+            <div className="hidden lg:flex w-1/2 bg-black relative flex-col items-center justify-center p-20 overflow-hidden">
                 {/* Background Visuals */}
-                <div className="absolute inset-0 bg-white/5 z-0" />
-                <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-white/10 rounded-full blur-[120px]" />
-                <div className="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-gray-500/10 rounded-full blur-[120px]" />
+                <div className="absolute inset-0 bg-[#00FF41]/5 z-0" />
+                <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-[#00FF41]/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-[#00FF41]/5 rounded-full blur-[120px]" />
 
                 {/* Dashboard Preview Elements */}
                 <div className="relative z-10 w-full max-w-[500px] flex flex-col gap-8 animate-in slide-in-from-right-12 duration-1000">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-dark border border-white/5 rounded-full">
-                            <div className="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.6)]" />
-                            <span className="text-[10px] font-black uppercase tracking-widest text-white/60">Real-Time Data Active</span>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-black/50 border border-[#00FF41]/20 rounded-full">
+                            <div className="h-1.5 w-1.5 rounded-full bg-[#00FF41] shadow-[0_0_8px_rgba(0,255,65,0.6)] animate-pulse" />
+                            <span className="text-[10px] font-black uppercase tracking-widest text-[#00FF41]/80">Real-Time Data Active</span>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight tracking-tighter">
                             Unlock the <span className="text-white">Full Potential</span> of Your Data.
@@ -187,7 +187,7 @@ export default function LoginPage() {
                                 <div className="h-4 w-4 bg-white/20 rounded text-white flex items-center justify-center text-[10px] font-bold">↗</div>
                             </div>
                             <div className="h-3 w-20 bg-white/20 rounded-full" />
-                            <div className="h-8 w-full bg-gradient-to-t from-white/20 to-transparent rounded-lg border-b-2 border-white" />
+                            <div className="h-8 w-full bg-gradient-to-t from-[#00FF41]/30 to-transparent rounded-lg border-b-2 border-[#00FF41]" />
                         </div>
                         <div className="bg-[#1C1F26] border border-white/5 p-4 rounded-xl space-y-3 shadow-2xl mt-4 skew-y-[1deg]">
                             <div className="flex gap-2">
@@ -201,7 +201,7 @@ export default function LoginPage() {
                                 <div className="w-full h-[30%] bg-white/5 rounded-t" />
                                 <div className="w-full h-[60%] bg-white/5 rounded-t" />
                                 <div className="w-full h-[45%] bg-white/10 rounded-t" />
-                                <div className="w-full h-[90%] bg-white/40 rounded-t" />
+                                <div className="w-full h-[90%] bg-[#00FF41]/50 rounded-t shadow-[0_0_10px_rgba(0,255,65,0.3)]" />
                                 <div className="w-full h-[70%] bg-white/5 rounded-t" />
                             </div>
                         </div>

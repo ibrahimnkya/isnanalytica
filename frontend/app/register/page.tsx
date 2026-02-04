@@ -103,11 +103,11 @@ export default function RegisterPage() {
                 {/* Logo */}
                 <div className="flex justify-center lg:justify-start relative z-10">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center shadow-lg shadow-black/20">
-                            <BarChart3 className="h-5 w-5 text-primary-foreground" strokeWidth={2.5} />
+                        <div className="h-8 w-8 bg-[#00FF41] rounded-lg flex items-center justify-center shadow-lg shadow-[#00FF41]/20">
+                            <BarChart3 className="h-5 w-5 text-black" strokeWidth={2.5} />
                         </div>
                         <span className="text-xl font-black tracking-tighter uppercase text-foreground">
-                            ISN <span className="text-foreground">Analytica</span>
+                            ISN <span className="text-[#00FF41]">Analytica</span>
                         </span>
                     </Link>
                 </div>
@@ -121,16 +121,16 @@ export default function RegisterPage() {
                                 <div key={s.id} className="flex items-center group">
                                     <div className={`
                     flex items-center justify-center h-10 w-10 rounded-full border-2 transition-all duration-300
-                    ${step === s.id ? 'border-primary bg-primary/10 text-primary' :
-                                            step > s.id ? 'border-primary bg-primary text-primary-foreground' : 'border-border text-foreground-muted'}
+                    ${step === s.id ? 'border-[#00FF41] bg-[#00FF41]/10 text-[#00FF41]' :
+                                            step > s.id ? 'border-[#00FF41] bg-[#00FF41] text-black' : 'border-border text-foreground-muted'}
                   `}>
                                         {step > s.id ? <Check className="h-5 w-5" strokeWidth={3} /> : <span className="font-black text-sm">{s.id}</span>}
                                     </div>
                                     <div className={`ml-3 hidden md:block transition-all duration-300 ${step === s.id ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'}`}>
-                                        <span className="text-[10px] uppercase font-black tracking-widest text-primary">{s.name}</span>
+                                        <span className="text-[10px] uppercase font-black tracking-widest text-[#00FF41]">{s.name}</span>
                                     </div>
                                     {i < steps.length - 1 && (
-                                        <div className={`h-[2px] w-8 md:w-12 mx-2 md:mx-4 transition-all duration-500 ${step > s.id ? 'bg-primary' : 'bg-border'}`} />
+                                        <div className={`h-[2px] w-8 md:w-12 mx-2 md:mx-4 transition-all duration-500 ${step > s.id ? 'bg-[#00FF41]' : 'bg-border'}`} />
                                     )}
                                 </div>
                             ))}
@@ -265,8 +265,8 @@ export default function RegisterPage() {
                                         onClick={nextStep}
                                         className="group/btn relative flex-[2]"
                                     >
-                                        <div className="absolute inset-0 bg-black/20 rounded-xl blur-lg opacity-0 group-hover/btn:opacity-100 transition-opacity" />
-                                        <div className="relative w-full py-3.5 bg-primary text-primary-foreground font-black rounded-xl hover:bg-primary-hover transition-all flex items-center justify-center gap-2 active:scale-[0.98] shadow-lg shadow-black/20 uppercase tracking-widest text-sm">
+                                        <div className="absolute inset-0 bg-[#00FF41]/30 rounded-xl blur-lg opacity-0 group-hover/btn:opacity-100 transition-opacity" />
+                                        <div className="relative w-full py-3.5 bg-[#00FF41] text-black font-black rounded-xl hover:bg-[#00CC33] transition-all flex items-center justify-center gap-2 active:scale-[0.98] shadow-lg shadow-[#00FF41]/20 uppercase tracking-widest text-sm">
                                             Continue
                                             <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                                         </div>
@@ -277,8 +277,8 @@ export default function RegisterPage() {
                                         disabled={isLoading}
                                         className="group/btn relative flex-[2]"
                                     >
-                                        <div className="absolute inset-0 bg-black/20 rounded-xl blur-lg opacity-0 group-hover/btn:opacity-100 transition-opacity" />
-                                        <div className="relative w-full py-3.5 bg-primary text-primary-foreground font-black rounded-xl hover:bg-primary-hover transition-all flex items-center justify-center gap-2 active:scale-[0.98] disabled:opacity-50 shadow-lg shadow-black/20 uppercase tracking-widest text-sm">
+                                        <div className="absolute inset-0 bg-[#00FF41]/30 rounded-xl blur-lg opacity-0 group-hover/btn:opacity-100 transition-opacity" />
+                                        <div className="relative w-full py-3.5 bg-[#00FF41] text-black font-black rounded-xl hover:bg-[#00CC33] transition-all flex items-center justify-center gap-2 active:scale-[0.98] disabled:opacity-50 shadow-lg shadow-[#00FF41]/20 uppercase tracking-widest text-sm">
                                             {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : (
                                                 <>
                                                     Complete Setup
@@ -292,7 +292,7 @@ export default function RegisterPage() {
                         </form>
 
                         <p className="text-center text-sm font-medium text-foreground-secondary">
-                            Already have an account? <Link href="/login" className="text-primary font-black hover:underline">Sign In</Link>
+                            Already have an account? <Link href="/login" className="text-[#00FF41] font-black hover:underline">Sign In</Link>
                         </p>
                     </div>
                 </div>
@@ -306,18 +306,18 @@ export default function RegisterPage() {
             </div>
 
             {/* ── RIGHT COLUMN: Visual Showcase ── */}
-            <div className="hidden lg:flex w-1/2 bg-bg-dark relative flex-col items-center justify-center p-20 overflow-hidden">
+            <div className="hidden lg:flex w-1/2 bg-black relative flex-col items-center justify-center p-20 overflow-hidden">
                 {/* Background Visuals */}
-                <div className="absolute inset-0 bg-white/5 z-0" />
-                <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-white/10 rounded-full blur-[120px]" />
-                <div className="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-gray-500/10 rounded-full blur-[120px]" />
+                <div className="absolute inset-0 bg-[#00FF41]/5 z-0" />
+                <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-[#00FF41]/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-[#00FF41]/5 rounded-full blur-[120px]" />
 
                 {/* Dashboard Preview Elements */}
                 <div className="relative z-10 w-full max-w-[500px] flex flex-col gap-8 animate-in slide-in-from-right-12 duration-1000">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-dark border border-white/5 rounded-full">
-                            <div className="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.6)]" />
-                            <span className="text-[10px] font-black uppercase tracking-widest text-white/60">System Ready for Onboarding</span>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-black/50 border border-[#00FF41]/20 rounded-full">
+                            <div className="h-1.5 w-1.5 rounded-full bg-[#00FF41] shadow-[0_0_8px_rgba(0,255,65,0.6)] animate-pulse" />
+                            <span className="text-[10px] font-black uppercase tracking-widest text-[#00FF41]/80">System Ready for Onboarding</span>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight tracking-tighter">
                             A New Era of <span className="text-white">Operational Intelligence.</span>
