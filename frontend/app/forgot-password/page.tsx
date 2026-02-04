@@ -46,11 +46,11 @@ export default function ForgotPasswordPage() {
                 {/* Logo */}
                 <div className="flex justify-center lg:justify-start relative z-10">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center shadow-lg shadow-primary/20">
+                        <div className="h-8 w-8 bg-[#00FF41] rounded-lg flex items-center justify-center shadow-lg shadow-[#00FF41]/20">
                             <BarChart3 className="h-5 w-5 text-black" strokeWidth={2.5} />
                         </div>
                         <span className="text-xl font-black tracking-tighter uppercase text-foreground">
-                            ISN <span className="text-primary">Analytica</span>
+                            ISN <span className="text-[#00FF41]">Analytica</span>
                         </span>
                     </Link>
                 </div>
@@ -139,20 +139,20 @@ export default function ForgotPasswordPage() {
             </div>
 
             {/* ── RIGHT COLUMN: Visual Showcase ── */}
-            <div className="hidden lg:flex w-1/2 bg-bg-dark relative flex-col items-center justify-center p-20 overflow-hidden">
+            <div className="hidden lg:flex w-1/2 bg-black relative flex-col items-center justify-center p-20 overflow-hidden">
                 {/* Background Visuals */}
-                <div className="absolute inset-0 bg-primary/5 z-0" />
-                <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
+                <div className="absolute inset-0 bg-[#00FF41]/5 z-0" />
+                <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-[#00FF41]/10 rounded-full blur-[120px]" />
 
                 {/* Password Reset Visual Motif */}
                 <div className="relative z-10 w-full max-w-[440px] flex flex-col gap-12 animate-in slide-in-from-right-12 duration-1000">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-dark border border-white/5 rounded-full">
-                            <div className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(0,255,106,0.6)]" />
-                            <span className="text-[10px] font-black uppercase tracking-widest text-white/60">Enhanced Security Protocols</span>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-black/50 border border-[#00FF41]/20 rounded-full">
+                            <div className="h-1.5 w-1.5 rounded-full bg-[#00FF41] shadow-[0_0_8px_rgba(0,255,65,0.6)] animate-pulse" />
+                            <span className="text-[10px] font-black uppercase tracking-widest text-[#00FF41]/80">Enhanced Security Protocols</span>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight tracking-tighter">
-                            Forgot Your <span className="text-primary">Key?</span> No Room for Worry.
+                            Forgot Your <span className="text-[#00FF41]">Key?</span> No Room for Worry.
                         </h2>
                         <p className="text-white/50 text-lg font-medium">
                             We take security seriously. Our recovery process is encrypted and streamlined to get you back to your metrics swiftly.

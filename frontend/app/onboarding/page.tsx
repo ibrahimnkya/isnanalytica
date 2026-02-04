@@ -56,10 +56,10 @@ export default function OnboardingPage() {
             <div className="w-full max-w-2xl">
                 {/* Branding */}
                 <div className="flex flex-col items-center mb-12 animate-in fade-in slide-in-from-top-4 duration-1000">
-                    <div className="h-16 w-16 bg-gradient-to-br from-primary to-primary-dark rounded-3xl flex items-center justify-center shadow-2xl shadow-primary/30 mb-4 transform hover:rotate-6 transition-transform">
+                    <div className="h-16 w-16 bg-[#00FF41] rounded-3xl flex items-center justify-center shadow-2xl shadow-[#00FF41]/30 mb-4 transform hover:rotate-6 transition-transform">
                         <BarChart3 className="h-9 w-9 text-black" />
                     </div>
-                    <h1 className="text-3xl font-black tracking-tighter">ISN <span className="text-primary italic">Analytica</span></h1>
+                    <h1 className="text-3xl font-black tracking-tighter">ISN <span className="text-[#00FF41] italic">Analytica</span></h1>
                     <p className="text-foreground-muted mt-2 font-medium">Powering decision intelligence across Tanzania.</p>
                 </div>
 
@@ -213,7 +213,7 @@ export default function OnboardingPage() {
                             <button
                                 onClick={nextStep}
                                 disabled={step === 1 && !formData.orgName}
-                                className="flex items-center gap-2 bg-primary text-black px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 active:scale-95 transition-all disabled:opacity-50 disabled:scale-100 disabled:shadow-none"
+                                className="flex items-center gap-2 bg-[#00FF41] text-black px-8 py-4 rounded-2xl font-black shadow-xl shadow-[#00FF41]/20 hover:shadow-[#00FF41]/40 hover:scale-105 active:scale-95 transition-all disabled:opacity-50 disabled:scale-100 disabled:shadow-none"
                             >
                                 Continue
                                 <ArrowRight className="h-5 w-5" />
@@ -221,7 +221,7 @@ export default function OnboardingPage() {
                         ) : (
                             <Link
                                 href="/dashboards"
-                                className="flex items-center gap-2 bg-primary text-black px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 active:scale-95 transition-all"
+                                className="flex items-center gap-2 bg-[#00FF41] text-black px-8 py-4 rounded-2xl font-black shadow-xl shadow-[#00FF41]/20 hover:shadow-[#00FF41]/40 hover:scale-105 active:scale-95 transition-all"
                             >
                                 Finish Setup
                                 <Check className="h-5 w-5" />
