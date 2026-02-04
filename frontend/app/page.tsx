@@ -16,6 +16,8 @@ import {
     Play,
     Terminal
 } from 'lucide-react';
+import Footer from '@/components/Footer';
+import SupportButton from '@/components/SupportButton';
 
 const sectors = [
     {
@@ -317,24 +319,30 @@ export default function LandingPage() {
                 </section>
 
                 <section className="py-32 md:py-48 px-6 md:px-12 text-center relative overflow-hidden">
+                    {/* Background glow */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00FF41]/5 rounded-full blur-3xl" />
+                    
                     <div className="relative z-10 space-y-12">
                         <h2 className="text-5xl md:text-8xl font-black tracking-tight leading-[0.9]">
                             Confidence in every
                             <br />
-                            <span className="bg-gradient-to-r from-primary via-primary to-gray-400 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-[#00FF41] via-[#00CC33] to-[#00AA2A] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(0,255,65,0.3)]">
                                 decision.
                             </span>
                         </h2>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
                             <Link
                                 href="/register"
-                                className="px-12 py-5 bg-gradient-to-r from-primary to-primary-dark text-black text-lg font-bold rounded-2xl hover:shadow-2xl hover:shadow-primary/40 transition-all duration-300 transform hover:scale-105"
+                                className="group relative px-12 py-5 text-lg font-bold rounded-2xl transition-all duration-300 transform hover:scale-105"
                             >
-                                Get Started Now
+                                <div className="absolute inset-0 bg-[#00FF41] rounded-2xl blur-xl opacity-40 group-hover:opacity-60 transition-opacity" />
+                                <div className="relative bg-[#00FF41] text-black px-12 py-5 rounded-2xl group-hover:shadow-2xl group-hover:shadow-[#00FF41]/40 transition-all">
+                                    Get Started Now
+                                </div>
                             </Link>
                             <Link
                                 href="/demo"
-                                className="px-12 py-5 bg-surface/50 border border-border/50 text-foreground text-lg font-semibold rounded-2xl hover:border-primary/30 backdrop-blur-sm transition-all duration-300 hover:bg-surface/80"
+                                className="px-12 py-5 bg-white/5 border border-white/10 text-white text-lg font-semibold rounded-2xl hover:border-[#00FF41]/30 backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
                             >
                                 Request Regional Demo
                             </Link>
@@ -343,25 +351,8 @@ export default function LandingPage() {
                 </section>
             </main>
 
-            {/* Footer */}
-            <footer className="py-16 px-6 md:px-12 border-t border-border/30 bg-surface-alt/20 backdrop-blur-xl">
-                <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
-                        <div className="flex items-center gap-3">
-                            <div className="h-12 w-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center shadow-lg shadow-primary/20">
-                                <BarChart3 className="h-7 w-7 text-black" strokeWidth={2.5} />
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-xl font-bold tracking-tight text-foreground">ISN</span>
-                                <span className="text-xs font-medium text-primary tracking-wide">ANALYTICA</span>
-                            </div>
-                        </div>
-                        <div className="text-sm text-foreground-muted">
-                            Made with confidence in Tanzania.
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
+            <SupportButton />
         </div>
     );
 }

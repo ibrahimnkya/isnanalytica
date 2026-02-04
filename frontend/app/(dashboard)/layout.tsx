@@ -1,6 +1,7 @@
 import { AppSidebar } from '@/components/app-sidebar';
 import { Navbar } from '@/components/Navbar';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
+import SupportButton from '@/components/SupportButton';
 
 export default function DashboardLayout({
     children,
@@ -18,6 +19,7 @@ export default function DashboardLayout({
                     </main>
                 </div>
             </SidebarInset>
+            <SupportButton />
         </SidebarProvider>
     );
 }
